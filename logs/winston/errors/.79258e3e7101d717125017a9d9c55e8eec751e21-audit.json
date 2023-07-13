@@ -9,6 +9,16 @@
             "date": 1689266075494,
             "name": "F:\\Level-2\\project\\Simple-Book-Catalog\\server\\logs\\winston\\errors\\um-2023-13-07-22-error.log",
             "hash": "45551398b35526faf4ac380f70219586105f498e59973c037c5ebccf509c150d"
+        },
+        {
+            "date": 1689271039013,
+            "name": "F:\\Level-2\\project\\Simple-Book-Catalog\\server\\logs\\winston\\errors\\um-2023-13-07-23-error.log",
+            "hash": "e8e7bf4cdd8baab0e08367f0d7cb35ae705b217923d5afdbf6d693c53172a329"
+        },
+        {
+            "date": 1689271483325,
+            "name": "F:\\Level-2\\project\\Simple-Book-Catalog\\server\\logs\\winston\\errors\\um-2023-14-07-00-error.log",
+            "hash": "cea370ae942f30930099b0e616550f87fa427b8ea1e3bbba8b36916c1d621318"
         }
     ],
     "hashType": "sha256"

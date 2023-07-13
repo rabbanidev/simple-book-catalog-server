@@ -9,6 +9,16 @@
             "date": 1689266075482,
             "name": "F:\\Level-2\\project\\Simple-Book-Catalog\\server\\logs\\winston\\successes\\um-2023-13-07-22-success.log",
             "hash": "6107ef6d431d1caf1b361d550b8f288fb5ce54b97da8fc4c8df6022edb3705c9"
+        },
+        {
+            "date": 1689271039004,
+            "name": "F:\\Level-2\\project\\Simple-Book-Catalog\\server\\logs\\winston\\successes\\um-2023-13-07-23-success.log",
+            "hash": "2f97319a276cfb1738092da9d526a5875125d2aa3693c71811222b34fdea2664"
+        },
+        {
+            "date": 1689271483311,
+            "name": "F:\\Level-2\\project\\Simple-Book-Catalog\\server\\logs\\winston\\successes\\um-2023-14-07-00-success.log",
+            "hash": "271fe1867e37ea38ae7031f8e5f06ca130a6bf3539fa9ec6326442aeb431ad54"
         }
     ],
     "hashType": "sha256"
