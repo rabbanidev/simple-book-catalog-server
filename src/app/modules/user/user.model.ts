@@ -32,7 +32,7 @@ const userSchema = new Schema<IUser, UserModel>(
 userSchema.statics.userExit = async function (
   email: string
 ): Promise<Partial<IUser> | null> {
-  return await User.findOne({ email }, { id: '$_id', _id: 0, password: 1 });
+  return await User.findOne({ email }, { password: 1 });
 };
 
 // Match password

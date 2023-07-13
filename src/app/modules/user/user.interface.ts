@@ -2,7 +2,7 @@
 import { Model } from 'mongoose';
 
 export type IUser = {
-  id?: string;
+  _id?: string;
   email: string;
   password: string;
 };

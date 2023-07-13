@@ -50,12 +50,12 @@ const login = async (payload: IUser): Promise<ILoginResponse> => {
 
   // Generate access and refresh token
   const refreshToken = jwtHelpers.createToken(
-    { userId: user.id },
+    { userId: user._id },
     config.jwt.refresh_secret as Secret,
     config.jwt.refresh_expires_in as string
   );
   const accessToken = jwtHelpers.createToken(
-    { userId: user.id },
+    { userId: user._id },
     config.jwt.secret as Secret,
     config.jwt.expires_in as string
   );
