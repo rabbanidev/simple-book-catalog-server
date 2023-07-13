@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "F:\\Level-2\\project\\Simple-Book-Catalog\\server\\logs\\winston\\errors\\.79258e3e7101d717125017a9d9c55e8eec751e21-audit.json",
+    "files": [
+        {
+            "date": 1689266075494,
+            "name": "F:\\Level-2\\project\\Simple-Book-Catalog\\server\\logs\\winston\\errors\\um-2023-13-07-22-error.log",
+            "hash": "45551398b35526faf4ac380f70219586105f498e59973c037c5ebccf509c150d"
+        }
+    ],
+    "hashType": "sha256"
+}
