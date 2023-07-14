@@ -1,6 +1,7 @@
 import { IRoute } from '../../interfaces/route';
 import { AuthRoutes } from '../modules/auth/auth.route';
 import { BookRoutes } from '../modules/book/book.route';
+import { FilterRoutes } from '../modules/filter/filter.route';
 
 const modulesRoutes: IRoute[] = [
   {
@@ -10,6 +11,10 @@ const modulesRoutes: IRoute[] = [
   {
     path: '/books',
     route: BookRoutes,
+  },
+  {
+    path: '/filters',
+    route: FilterRoutes,
   },
 ];
 

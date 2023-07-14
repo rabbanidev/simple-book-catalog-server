@@ -24,6 +24,16 @@
             "date": 1689274945872,
             "name": "F:\\Level-2\\project\\Simple-Book-Catalog\\server\\logs\\winston\\successes\\um-2023-14-07-01-success.log",
             "hash": "81515f4392d8752c4c738bf4071597e418990c35cc30a4a01f6db1c8ce2a4866"
+        },
+        {
+            "date": 1689309933700,
+            "name": "F:\\Level-2\\project\\Simple-Book-Catalog\\server\\logs\\winston\\successes\\um-2023-14-07-10-success.log",
+            "hash": "4b4d359de8ee4dcd41473065628adf00ee80ee44f1d2f1c2f40d91e4c836a751"
+        },
+        {
+            "date": 1689310825946,
+            "name": "F:\\Level-2\\project\\Simple-Book-Catalog\\server\\logs\\winston\\successes\\um-2023-14-07-11-success.log",
+            "hash": "9d61a50ee875ee427909841329c7ca9fa3e4f94b91acfe551994b965517cf1ea"
         }
     ],
     "hashType": "sha256"
