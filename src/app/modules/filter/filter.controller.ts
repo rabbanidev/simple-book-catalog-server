@@ -3,12 +3,11 @@ import catchAsync from '../../../shared/catchAsync';
 import sendResponse from '../../../shared/sendResponse';
 import httpStatus from 'http-status';
 import { FilterService } from './filter.service';
-import { IGenre, IYear } from './filter.interface';
 
 const getFilterByGenre = catchAsync(async (req: Request, res: Response) => {
   const result = await FilterService.getFilterByGenre();
 
-  sendResponse<IGenre[]>(res, {
+  sendResponse<string[]>(res, {
     statusCode: httpStatus.OK,
     success: true,
     message: 'Genres retrive successfully!',
@@ -19,7 +18,7 @@ const getFilterByGenre = catchAsync(async (req: Request, res: Response) => {
 const getFilterByYear = catchAsync(async (req: Request, res: Response) => {
   const result = await FilterService.getFilterByYear();
 
-  sendResponse<IYear[]>(res, {
+  sendResponse<number[]>(res, {
     statusCode: httpStatus.OK,
     success: true,
     message: 'Years retrive successfully!',
