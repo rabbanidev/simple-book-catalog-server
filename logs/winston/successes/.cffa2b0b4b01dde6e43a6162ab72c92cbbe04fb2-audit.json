@@ -49,6 +49,11 @@
             "date": 1689328923330,
             "name": "F:\\Level-2\\project\\Simple-Book-Catalog\\server\\logs\\winston\\successes\\um-2023-14-07-16-success.log",
             "hash": "25026fa493b8a540611cfcc8d3293a6c2dea6a5361d12579a15b83559120f2ce"
+        },
+        {
+            "date": 1689332787052,
+            "name": "F:\\Level-2\\project\\Simple-Book-Catalog\\server\\logs\\winston\\successes\\um-2023-14-07-17-success.log",
+            "hash": "7c1bc5a8666a1414975e877446ec6e149b4b0d07056704302c319448ed5d8005"
         }
     ],
     "hashType": "sha256"

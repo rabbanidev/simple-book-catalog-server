@@ -17,6 +17,16 @@ const createBookZodSchema = z.object({
   }),
 });
 
+const editBookZodSchema = z.object({
+  body: z.object({
+    title: z.string().optional(),
+    author: z.string().optional(),
+    genre: z.string().optional(),
+    publicationDate: z.string().optional(),
+  }),
+});
+
 export const BookValidation = {
   createBookZodSchema,
+  editBookZodSchema,
 };
