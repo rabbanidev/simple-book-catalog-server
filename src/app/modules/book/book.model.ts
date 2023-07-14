@@ -29,9 +29,6 @@ const bookSchema = new Schema<IBook, BookModel>(
     timestamps: true,
     toJSON: {
       virtuals: true,
-      transform(doc, ret) {
-        delete ret.password;
-      },
     },
   }
 );
