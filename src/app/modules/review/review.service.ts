@@ -1,6 +1,6 @@
 import { JwtPayload } from 'jsonwebtoken';
 import { IReview } from './review.interface';
-import { checkUser } from './review.utils';
+import { exitReview, exitUser } from './review.utils';
 import ApiError from '../../../errors/ApiError';
 import httpStatus from 'http-status';
 import Review from './review.model';
@@ -10,9 +10,14 @@ const createReview = async (
   payload: IReview,
   user: JwtPayload
 ): Promise<IReview | null> => {
-  const isExitUser = await checkUser(user.userId);
+  const isExitUser = await exitUser(user.userId);
   if (isExitUser) {
     throw new ApiError(httpStatus.FORBIDDEN, 'Access denied!');
+  }
+
+  const isExitReview = await exitReview(user.userId);
+  if (isExitReview) {
+    throw new ApiError(httpStatus.FORBIDDEN, 'Already reviewed!');
   }
 
   const reviewPayload = {
@@ -30,6 +35,20 @@ const createReview = async (
   return result;
 };
 
+const getReviews = async (id: string): Promise<IReview[] | null> => {
+  const result = await Review.find({
+    book: id,
+  })
+    .populate('user')
+    .populate({
+      path: 'book',
+      populate: 'user',
+    });
+
+  return result;
+};
+
 export const ReviewService = {
   createReview,
+  getReviews,
 };
