@@ -43,7 +43,8 @@ const getReviews = async (id: string): Promise<IReview[] | null> => {
     .populate({
       path: 'book',
       populate: 'user',
-    });
+    })
+    .sort({ createdAt: 'desc' });
 
   return result;
 };
