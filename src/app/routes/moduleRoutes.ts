@@ -2,6 +2,7 @@ import { IRoute } from '../../interfaces/route';
 import { AuthRoutes } from '../modules/auth/auth.route';
 import { BookRoutes } from '../modules/book/book.route';
 import { FilterRoutes } from '../modules/filter/filter.route';
+import { ReadingListRoutes } from '../modules/readingList/readingList.route';
 import { ReviewRoutes } from '../modules/review/review.route';
 import { UserRoutes } from '../modules/user/user.route';
 import { WishListRoutes } from '../modules/wishlist/wishlist.route';
@@ -30,6 +31,10 @@ const modulesRoutes: IRoute[] = [
   {
     path: '/wishlist',
     route: WishListRoutes,
+  },
+  {
+    path: '/reading-list',
+    route: ReadingListRoutes,
   },
 ];
 
