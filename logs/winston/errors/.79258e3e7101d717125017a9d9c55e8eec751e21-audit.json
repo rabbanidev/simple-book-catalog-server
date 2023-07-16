@@ -84,6 +84,26 @@
             "date": 1689501888460,
             "name": "F:\\Level-2\\project\\Simple-Book-Catalog\\server\\logs\\winston\\errors\\um-2023-16-07-16-error.log",
             "hash": "18f04a14ed848af7a785b4c95ce1f77a9c35d23c0f87819617c18fc02f3114a2"
+        },
+        {
+            "date": 1689513977427,
+            "name": "F:\\Level-2\\project\\Simple-Book-Catalog\\server\\logs\\winston\\errors\\um-2023-16-07-19-error.log",
+            "hash": "0c14b810a947ca5b036aa7376c82926ee271c54590a1076b709b6d5ce800b9b1"
+        },
+        {
+            "date": 1689516075251,
+            "name": "F:\\Level-2\\project\\Simple-Book-Catalog\\server\\logs\\winston\\errors\\um-2023-16-07-20-error.log",
+            "hash": "f5883882302c2c1ffc32ffb0f0c9d8e104b22875ab6e86bb9ed2d6cd9b9c7a2b"
+        },
+        {
+            "date": 1689522735884,
+            "name": "F:\\Level-2\\project\\Simple-Book-Catalog\\server\\logs\\winston\\errors\\um-2023-16-07-21-error.log",
+            "hash": "f0e8d291b76e748a67e47d3f519281303d655fc66a1eb22b803d610c7e3eef67"
+        },
+        {
+            "date": 1689523497553,
+            "name": "F:\\Level-2\\project\\Simple-Book-Catalog\\server\\logs\\winston\\errors\\um-2023-16-07-22-error.log",
+            "hash": "3491b5bf127c54f0cace1d48b76e1a0be9686174efc0f3616ef1b80d022a7289"
         }
     ],
     "hashType": "sha256"

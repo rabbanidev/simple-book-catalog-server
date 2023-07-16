@@ -4,6 +4,7 @@ import { BookRoutes } from '../modules/book/book.route';
 import { FilterRoutes } from '../modules/filter/filter.route';
 import { ReviewRoutes } from '../modules/review/review.route';
 import { UserRoutes } from '../modules/user/user.route';
+import { WishListRoutes } from '../modules/wishlist/wishlist.route';
 
 const modulesRoutes: IRoute[] = [
   {
@@ -25,6 +26,10 @@ const modulesRoutes: IRoute[] = [
   {
     path: '/users',
     route: UserRoutes,
+  },
+  {
+    path: '/wishlist',
+    route: WishListRoutes,
   },
 ];
 

@@ -2,6 +2,7 @@ import { Model, Schema } from 'mongoose';
 import { IUser } from '../user/user.interface';
 
 export type IBook = {
+  id?: string;
   title: string;
   author: string;
   genre: string;
