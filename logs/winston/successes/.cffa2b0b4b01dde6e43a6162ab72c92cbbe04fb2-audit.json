@@ -109,6 +109,26 @@
             "date": 1689527096582,
             "name": "F:\\Level-2\\project\\Simple-Book-Catalog\\server\\logs\\winston\\successes\\um-2023-16-07-23-success.log",
             "hash": "e69d7ce23b493b6a086d2bd11956b445120c8c6d1361ebe7138346beb0c4380d"
+        },
+        {
+            "date": 1689588729347,
+            "name": "F:\\Level-2\\project\\Simple-Book-Catalog\\server\\logs\\winston\\successes\\um-2023-17-07-16-success.log",
+            "hash": "f0501511b0f2729aa57f6737930e211ffd7c4b50c37c4bb4612194eccbab6dfe"
+        },
+        {
+            "date": 1689607629818,
+            "name": "F:\\Level-2\\project\\Simple-Book-Catalog\\server\\logs\\winston\\successes\\um-2023-17-07-21-success.log",
+            "hash": "afbc932fdb841f0017d400ba16383a8fc9b48d494e08816d80d5b3b55160b0db"
+        },
+        {
+            "date": 1689613034082,
+            "name": "F:\\Level-2\\project\\Simple-Book-Catalog\\server\\logs\\winston\\successes\\um-2023-17-07-22-success.log",
+            "hash": "4a63951108e6ebb520c5e656687f0afecce3097fda5e4fd3aee22deab20dea37"
+        },
+        {
+            "date": 1689613203965,
+            "name": "F:\\Level-2\\project\\Simple-Book-Catalog\\server\\logs\\winston\\successes\\um-2023-17-07-23-success.log",
+            "hash": "3d305c151d2112da382cad07d928fe58393e101fd4976e23825fdf41ea4a5a15"
         }
     ],
     "hashType": "sha256"

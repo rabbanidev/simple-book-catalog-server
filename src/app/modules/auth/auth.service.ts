@@ -45,7 +45,7 @@ const login = async (payload: IUser): Promise<ILoginResponse> => {
     user.password as string
   );
   if (!isMatchPassword) {
-    throw new ApiError(httpStatus.BAD_REQUEST, "Password doesn't match!");
+    throw new ApiError(httpStatus.BAD_REQUEST, 'Wrong password!');
   }
 
   // Generate access and refresh token
