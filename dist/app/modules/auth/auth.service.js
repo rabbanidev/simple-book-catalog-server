@@ -40,7 +40,7 @@ const login = (payload) => __awaiter(void 0, void 0, void 0, function* () {
     // Match password
     const isMatchPassword = yield user_model_1.default.matchPassword(payload.password, user.password);
     if (!isMatchPassword) {
-        throw new ApiError_1.default(http_status_1.default.BAD_REQUEST, "Password doesn't match!");
+        throw new ApiError_1.default(http_status_1.default.BAD_REQUEST, 'Wrong password!');
     }
     // Generate access and refresh token
     const refreshToken = jwtHelpers_1.jwtHelpers.createToken({ userId: user._id }, config_1.default.jwt.refresh_secret, config_1.default.jwt.refresh_expires_in);
