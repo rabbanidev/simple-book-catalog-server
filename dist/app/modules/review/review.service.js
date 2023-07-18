@@ -18,9 +18,10 @@ const ApiError_1 = __importDefault(require("../../../errors/ApiError"));
 const http_status_1 = __importDefault(require("http-status"));
 const review_model_1 = __importDefault(require("./review.model"));
 const createReview = (id, payload, user) => __awaiter(void 0, void 0, void 0, function* () {
-    const isSameUser = yield (0, review_utils_1.sameUser)(user.userId);
-    if (isSameUser) {
-        throw new ApiError_1.default(http_status_1.default.FORBIDDEN, 'Access denied!');
+    var _a;
+    const book = yield (0, review_utils_1.getBook)(user.userId);
+    if (((_a = book === null || book === void 0 ? void 0 : book.user) === null || _a === void 0 ? void 0 : _a.toString()) === user.userId.toString()) {
+        throw new ApiError_1.default(http_status_1.default.FORBIDDEN, "You can't review because you create this book!");
     }
     const isExitReview = yield (0, review_utils_1.exitReview)(id, user.userId);
     if (isExitReview) {

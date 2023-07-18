@@ -1,6 +1,6 @@
 import { JwtPayload } from 'jsonwebtoken';
 import { IReview } from './review.interface';
-import { exitReview, sameUser } from './review.utils';
+import { exitReview, getBook } from './review.utils';
 import ApiError from '../../../errors/ApiError';
 import httpStatus from 'http-status';
 import Review from './review.model';
@@ -10,9 +10,12 @@ const createReview = async (
   payload: IReview,
   user: JwtPayload
 ): Promise<IReview | null> => {
-  const isSameUser = await sameUser(user.userId);
-  if (isSameUser) {
-    throw new ApiError(httpStatus.FORBIDDEN, 'Access denied!');
+  const book = await getBook(user.userId);
+  if (book?.user?.toString() === user.userId.toString()) {
+    throw new ApiError(
+      httpStatus.FORBIDDEN,
+      "You can't review because you create this book!"
+    );
   }
 
   const isExitReview = await exitReview(id, user.userId);

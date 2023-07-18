@@ -129,6 +129,11 @@
             "date": 1689613716881,
             "name": "F:\\Level-2\\project\\Simple-Book-Catalog\\server\\logs\\winston\\errors\\um-2023-17-07-23-error.log",
             "hash": "8cfa55a0445f33fcfc5e4efb57147a756485d07fc9c1d83303f1036df9d83d54"
+        },
+        {
+            "date": 1689689316950,
+            "name": "F:\\Level-2\\project\\Simple-Book-Catalog\\server\\logs\\winston\\errors\\um-2023-18-07-20-error.log",
+            "hash": "67f7fcfdc0cecd5a2f6f3111287b8491e329ad3f0a0ff10f042e059dced92fff"
         }
     ],
     "hashType": "sha256"

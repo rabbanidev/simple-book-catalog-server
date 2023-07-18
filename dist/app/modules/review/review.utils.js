@@ -12,17 +12,17 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.exitReview = exports.sameUser = void 0;
+exports.exitReview = exports.getBook = void 0;
 const book_model_1 = __importDefault(require("../book/book.model"));
 const review_model_1 = __importDefault(require("./review.model"));
-const sameUser = (id) => __awaiter(void 0, void 0, void 0, function* () {
-    const book = yield book_model_1.default.findOne({ user: id }).lean();
-    return book ? true : false;
+const getBook = (id) => __awaiter(void 0, void 0, void 0, function* () {
+    const book = yield book_model_1.default.findOne({ user: id }, { user: 1 }).lean();
+    return book;
 });
-exports.sameUser = sameUser;
+exports.getBook = getBook;
 const exitReview = (bookId, userId) => __awaiter(void 0, void 0, void 0, function* () {
     const reviews = yield review_model_1.default.find({ user: userId }, { user: 1, book: 1 }).lean();
     const isReviewed = reviews.some((review) => String(review.book) === bookId);
-    return isReviewed ? true : false;
+    return isReviewed;
 });
 exports.exitReview = exitReview;

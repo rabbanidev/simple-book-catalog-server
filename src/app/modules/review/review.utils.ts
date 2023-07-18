@@ -1,9 +1,10 @@
+import { IBook } from '../book/book.interface';
 import Book from '../book/book.model';
 import Review from './review.model';
 
-export const sameUser = async (id: string): Promise<boolean> => {
-  const book = await Book.findOne({ user: id }).lean();
-  return book ? true : false;
+export const getBook = async (id: string): Promise<Partial<IBook> | null> => {
+  const book = await Book.findOne({ user: id }, { user: 1 }).lean();
+  return book;
 };
 
 export const exitReview = async (
@@ -16,5 +17,5 @@ export const exitReview = async (
   ).lean();
   const isReviewed = reviews.some((review) => String(review.book) === bookId);
 
-  return isReviewed ? true : false;
+  return isReviewed;
 };
